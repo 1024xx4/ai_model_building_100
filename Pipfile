@@ -4,6 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pandas = "==1.1.5"
+matplotlib = "==3.2.2"
+seaborn = "==0.11.1"
+sklearn = "*"
+scipy = "==1.4.1"
+hdbscan = "*"
+umap-learn = "*"
 
 [dev-packages]
 
