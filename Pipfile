@@ -11,6 +11,7 @@ sklearn = "*"
 scipy = "==1.4.1"
 hdbscan = "*"
 umap-learn = "*"
+pyclustering = "*"
 
 [dev-packages]
 
