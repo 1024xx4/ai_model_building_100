@@ -19,7 +19,7 @@ https://www.shuwasystem.co.jp/book/9784798064406.html
 - matplotlib 3.2.2
 - seaborn 0.11.1
 - numpy 1.19.5
-- sklearn 0.22.2 post1
+- sklearn 0.22.2.post1
 - scipy 1.4.1
 - xgboost 0.90
 - mlxtend 0.14.0
