@@ -7,10 +7,16 @@ name = "pypi"
 pandas = "==1.1.5"
 matplotlib = "==3.2.2"
 seaborn = "==0.11.1"
-sklearn = "*"
 scipy = "==1.4.1"
+umap-learn = "==0.5.1"
+scikit-learn = "==0.22.2.post1"
+xgboost = "==0.90"
+mlxtend = "==0.14.0"
+shap = "==0.39.0"
+pycaret = "*"
+pyclustering = "*"
+numpy = "==1.19.5"
 hdbscan = "*"
-umap-learn = "*"
 
 [dev-packages]
 
