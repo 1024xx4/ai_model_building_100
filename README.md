@@ -6,11 +6,11 @@ Python 実践 AI Model 構築 100本 Knock
 
 #### Support page
 
-https://www.shuwasystem.co.jp
+https://www.shuwasystem.co.jp/book/9784798064406.html
 
 #### Sample Data
+https://www.shuwasystem.co.jp/support/7980html/6440.html
 
-https://www.shuwasystem.co.jp/book/9784798064406.html
 
 #### Versions
 
