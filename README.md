@@ -172,17 +172,19 @@ Data の傾向から **Grouping** を行なう技術。
 ###### 決定木
 
 木構造（樹形図）を用いて予測を行なう手法。  
-![決定木の Image](img/img_tree.png)
+![img_tree](https://user-images.githubusercontent.com/7993391/193427203-46ae0c13-262d-44a5-b549-06be145204a3.png)
+
 
 ###### Random Forest
 
 決定木を複数生成し予測を行なう手法。各決定木を並列に扱い、結果を総合的に判断する。  
-![Random Foreset の Image](img/img_random_forest.png)
+![img_random_forest](https://user-images.githubusercontent.com/7993391/193427217-41d198ee-dbf6-488a-8b35-a639828c62de.png)
+
 
 ###### 勾配Boosting決定木
 
 決定木を複数生成し予測を行なう手法。逐次的に決定木を増やしていく。生成済みの決定木の結果を加味し新たな決定木を生成する。  
-![XgBoost の Image](img/img_xgboost.png)
+![img_xgboost](https://user-images.githubusercontent.com/7993391/193427219-aa5f5d1a-f715-4904-94cf-8ffceab2537e.png)
 
 
 ---
