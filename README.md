@@ -173,19 +173,37 @@ Data の傾向から **Grouping** を行なう技術。
 
 木構造（樹形図）を用いて予測を行なう手法。  
 ![img_tree](https://user-images.githubusercontent.com/7993391/193427203-46ae0c13-262d-44a5-b549-06be145204a3.png)
-
+- 単純な樹形図のため、Model の解釈がしやすい
+- 木の深さや最小 Sample数の調整である程度は緩和できるものの、過学習に陥る Risk が高い。
 
 ###### Random Forest
 
-決定木を複数生成し予測を行なう手法。各決定木を並列に扱い、結果を総合的に判断する。  
+Ensemble法を用いた手法。決定木を複数生成し予測を行なう手法。各決定木を並列に扱い、結果を総合的に判断する。  
 ![img_random_forest](https://user-images.githubusercontent.com/7993391/193427217-41d198ee-dbf6-488a-8b35-a639828c62de.png)
-
+- それぞれの決定木の平均を取ることで、予測精度は保ちつつ、過剰適合を抑制できる。
+- 決定木を複数使用するため、通常の決定木よりも計算Cost が高く、また、Model が複雑になり解釈が難しくなる。
 
 ###### 勾配Boosting決定木
 
-決定木を複数生成し予測を行なう手法。逐次的に決定木を増やしていく。生成済みの決定木の結果を加味し新たな決定木を生成する。  
+Ensemble法を用いた手法。決定木を複数生成し予測を行なう手法。逐次的に決定木を増やしていく。生成済みの決定木の結果を加味し新たな決定木を生成する。  
 ![img_xgboost](https://user-images.githubusercontent.com/7993391/193427219-aa5f5d1a-f715-4904-94cf-8ffceab2537e.png)
+- 高い精度が出やすく、Competition でも人気のある手法。
+- Parameter設定の影響を受けやすいため、Parameter調整には注意が必要
 
+#### Parameter-tuning手法
+##### 1. Grid-Search
+あらかじめ指定した Parameter の候補値の全通りの組み合わせを検証し、最も精度の高い Parameter の組み合わせを探索する手法。
+- 指定した Parameter の範囲では、最も Score が高い組み合わせを確実に得ることができる
+- 「Parameter の全組み合わせ数」× 「交差検証の分割数」だけ学習・評価が行なわれるため、計算Cost が高い。
+
+##### 2. Random-Search
+あらかじめ指定した Parameter の候補値の Random な組み合わせを指定した回数だけ検証し、その中で最も精度が高い Parameter の組み合わせを探索する手法。
+- Grid-Search よりも計算量が少なくて済む
+- 最適な組み合わせが確実に得られるわけではない
+
+##### 3. Bayes最適化
+Grid-Search と Random-Search の間をとったような手法。
+詳細は割愛する。
 
 ---
 
