@@ -284,3 +284,17 @@ Data の特徴を学習させた Model を構築する。
 
 ### AutoML
 昨今、Model 構築の自動化が進んでいる。
+#### PyCaret 
+AutoML する Python Library.
+代表的な機械学習 Library を wrap しており
+- 回帰
+- 分類
+- Clustering
+- 次元削除
+- 異常検知
+- 自然言語処理
+
+など対応可能。
+
+Model 構築に留まらず、機械学習の前処理や Model の比較もほとんど自動化できる。
+加えて可視化Plot も豊富で、SHAP の機能も内包している。
