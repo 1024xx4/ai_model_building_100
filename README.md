@@ -283,7 +283,11 @@ Data の特徴を学習させた Model を構築する。
 - 機械学習 Model を開発する上で必須の知識になってくる。
 
 ### AutoML
-昨今、Model 構築の自動化が進んでいる。
+- 昨今、Model 構築の自動化が進んでいる。
+- 非常に短い Code で Model構築や評価を行なうことができる。
+- 最大限使いこなしていくには、どんな Data を使って、どのような Model を構築し、適切に評価を行なう Skill が重要になってくる。
+そのため、Algorithm の違いなどを直感的に押さえておく基礎知識が非常に重要いなる。
+- あくまで AutoML は Coding のわずわらしさを軽減してくれる Tool.
 #### PyCaret 
 AutoML する Python Library.
 代表的な機械学習 Library を wrap しており
@@ -298,3 +302,4 @@ AutoML する Python Library.
 
 Model 構築に留まらず、機械学習の前処理や Model の比較もほとんど自動化できる。
 加えて可視化Plot も豊富で、SHAP の機能も内包している。
+
