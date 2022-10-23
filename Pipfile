@@ -13,10 +13,12 @@ scikit-learn = "==0.22.2.post1"
 xgboost = "==0.90"
 mlxtend = "==0.14.0"
 shap = "==0.39.0"
-pycaret = "*"
 pyclustering = "*"
 numpy = "==1.19.5"
 hdbscan = "*"
+pycaret = "==2.3.10"
+markupsafe = "==2.0.1"
+pyyaml = "==5.4.1"
 
 [dev-packages]
 
